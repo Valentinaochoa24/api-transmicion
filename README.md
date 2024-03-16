@@ -5,6 +5,7 @@ Esta API proporciona puntos finales para gestionar datos de usuarios, específic
 ## Autenticación
 
 Para acceder a los puntos finales relacionados con los usuarios, se requiere autenticación. Esta API utiliza Sanctum para la autenticación.
+para url de api ejecutar php artisan serve, ejemplo de respuesta: [http://127.0.0.1:8000], como quedaria la url =>  http://127.0.0.1:8000/api
 
 Endpoint:
 GET /user
