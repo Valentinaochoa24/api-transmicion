@@ -1,13 +1,47 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "axios": "^1.6.4",
-        "laravel-vite-plugin": "^1.0.0",
-        "vite": "^5.0.0"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "watch": "mix watch"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@popperjs/core": "^2.11.6",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@webpack-cli/generators": "^3.0.7",
+    "axios": "^1.6.4",
+    "bootstrap": "^5.2.3",
+    "laravel-mix": "^6.0.49",
+    "laravel-vite-plugin": "^1.0.0",
+    "sass": "^1.56.1",
+    "vite": "^5.0.0",
+    "vue": "^3.2.37",
+    "vue-loader": "^16.8.3",
+    "vue-template-compiler": "^2.7.16"
+  },
+  "name": "api",
+  "description": "Esta API proporciona puntos finales para gestionar datos de usuarios, específicamente para un panel de administración. Incluye autenticación utilizando Sanctum y operaciones CRUD para gestionar la información de los usuarios.",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valentinaochoa24/api-transmicion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valentinaochoa24/api-transmicion/issues"
+  },
+  "homepage": "https://github.com/Valentinaochoa24/api-transmicion#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "firebase": "^10.9.0",
+    "twilio-video": "^2.0.0"
+  }
 }

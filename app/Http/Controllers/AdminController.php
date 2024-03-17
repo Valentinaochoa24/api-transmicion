@@ -29,14 +29,21 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        $usuarios =  new Admin();
-        
-        $usuarios->nombre = $request->nombre;
-        $usuarios->email = $request->email;
-        $usuarios->contrasena = $request->contrasena;
-        $usuarios->rol = $request->rol;
-        
-        $usuarios->save();
+        try
+        {
+            $usuarios =  new Admin();
+            
+            $usuarios->nombre = $request->nombre;
+            $usuarios->email = $request->email;
+            $usuarios->contrasena = $request->contrasena;
+            $usuarios->rol = $request->rol;
+            
+            $usuarios->save();
+
+            return response()->json(['message' => 'Usuario almacenado correctamente'], 201);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 400);
+        }
     }
 
     /**
